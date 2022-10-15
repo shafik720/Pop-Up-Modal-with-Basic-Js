@@ -15,3 +15,10 @@ crossBtn.addEventListener('click',()=>{
     modalParent.style.display = 'none';
     section.style.filter = "blur(0)"
 })
+
+modalParent.addEventListener('click',(e)=>{
+    if(e.target.className == 'modal-parent'){
+        modalParent.style.display = 'none';
+        section.style.filter = "blur(0)"
+    }
+})
